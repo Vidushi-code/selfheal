@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets (kabhi commit nahi)
+.env
+*.pem
+*.key
+id_rsa*
+
+# Runtime data
+data/
+test_log.jsonl
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Screenshots mein account ID ho sakti hai
+screenshots/
+
+SelfHeal_Master_Prompt.md

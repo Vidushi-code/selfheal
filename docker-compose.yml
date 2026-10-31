@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        APP_VERSION: local
+    image: selfheal:local
+    container_name: selfheal-app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      - INCIDENT_LOG=/data/incidents.jsonl
+    volumes:
+      - ./data:/data:ro
